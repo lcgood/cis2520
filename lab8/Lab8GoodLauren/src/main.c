@@ -44,7 +44,7 @@ int main(int argc, char ** argv)
 		unsigned char *temp = (unsigned char*) ratingTree;
 		Tree * nameTree = createTree(2);
 		unsigned char *temp2 = (unsigned char*) nameTree;
-		for(int i=0; i<8; i++)
+		for(int i=0; i<sizeof(void*); i++)
 		{
 			*(temp+i) = 0;
 			*(temp2+i) = 0;
