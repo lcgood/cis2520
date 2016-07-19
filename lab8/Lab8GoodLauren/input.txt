@@ -1,0 +1,5 @@
+name,foodType,1
+Dominos,pizza,4
+East Side Marios,italian,3
+subway,sandwich,2
+
