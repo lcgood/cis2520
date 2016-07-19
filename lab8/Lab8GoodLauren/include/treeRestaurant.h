@@ -23,9 +23,9 @@ int compareName (void* r1, void* r2);
 
 int compareRating(void* r1, void* r2);
 
-Restaurant* createRestaurant();
+Restaurant* createRestaurant(int rating, char * name, char * foodType);
 
-void destroyRestaurant();
+void destroyRestaurant(void * toDelete);
 
 //1==rating, 2 ==name
 Tree* createTree(int type);

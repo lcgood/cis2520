@@ -5,7 +5,6 @@ course: cis2520
 last modified: July 18,2016
 */
 #include "fileParse.h"
-
 int getSize (char * fileName)
 {
     FILE * fp;

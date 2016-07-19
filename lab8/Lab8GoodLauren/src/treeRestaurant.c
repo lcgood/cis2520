@@ -17,7 +17,6 @@ int compareName (void* r1, void* r2)
 
 int compareRating (void* r1, void* r2)
 {
-
 	if(r1 == NULL || r2 == NULL) return 0;
 	if(*((Restaurant*)r1)->rating == *((Restaurant*)r2)->rating) return 0;
 	else if (*((Restaurant*)r1)->rating > *((Restaurant*)r2)->rating) return 1;
@@ -40,7 +39,6 @@ void destroyRestaurant(void * toDelete)
 	if(toDelete != NULL)
 	{
 		Restaurant * temp = (Restaurant*)toDelete;
-		printf("%s\n",temp->name);
 		free(temp->name);
 		free(temp->foodType);
 		free(temp->rating);

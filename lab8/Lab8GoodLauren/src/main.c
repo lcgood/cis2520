@@ -41,8 +41,14 @@ int main(int argc, char ** argv)
 		entriesList = parseFile(argv[1],fileLength-1,entriesList);
 		printEntries(entriesList, fileLength-1);
 		Tree * ratingTree = createTree(1);
+		unsigned char *temp = (unsigned char*) ratingTree;
 		Tree * nameTree = createTree(2);
-		printf("%p\n",(void*)nameTree);
+		unsigned char *temp2 = (unsigned char*) nameTree;
+		for(int i=0; i<8; i++)
+		{
+			*(temp+i) = 0;
+			*(temp2+i) = 0;
+		}
 		//populate trees
 		for(int i=0; i<fileLength-2;i++)
 		{
